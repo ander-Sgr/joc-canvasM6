@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d')
 const blocks = []
-const blockSize = 100
+const blockSize = 80
 const maxBlocks = 12
 const character = {
   x: canvas.width / 2,
@@ -11,10 +11,16 @@ const character = {
   size: 60
 }
 
+let time = document.getElementById('timer')
+let interval = null
+let countSeconds = 0
+
+
 canvas.width = 950
 canvas.height = 650
 
 generateBlockCoordinates()
+animationLoop()
 
 function drawBackgroundImage() {
 
@@ -142,10 +148,29 @@ document.addEventListener("keyup", function (event) {
   }
 });
 
+function resetGame() {
+  
+}
+
+function checkGameStatus() {
+  
+}
+
+function startTimer() {
+  
+}
+
+function stopTimer() {
+  
+}
+
+function resetTimer() {
+  
+}
+
 function animationLoop() {
   updatePosition();
   drawCharacter();
   requestAnimationFrame(animationLoop);
 
 }
-animationLoop()
