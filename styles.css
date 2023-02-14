@@ -8,3 +8,6 @@ canvas {
   
     background-color: lightskyblue;
   }
+  img{
+    display: none;
+  }
