@@ -51,7 +51,7 @@ function drawBlock() {
 
 function drawReward (){
   for (const rewards of rewards) {
-    
+      ctx.drawImage()
   }
 }
 
